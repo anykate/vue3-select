@@ -20,13 +20,12 @@ const routes = [
                 name: 'Home',
                 component: () => import('@/views/HomeView.vue'),
                 beforeEnter: checkAuth,
-                children: [
-                    {
-                        path: 'cars',
-                        name: 'Cars',
-                        component: () => import('@/components/CarList.vue'),
-                    },
-                ],
+            },
+            {
+                path: 'cars',
+                name: 'Cars',
+                component: () => import('@/components/CarList.vue'),
+                beforeEnter: checkAuth,
             },
             {
                 path: 'car/:id(\\d+)',

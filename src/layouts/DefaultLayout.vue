@@ -2,6 +2,8 @@
     <div class="container">
         <router-link :to="{ name: 'Home' }">Home</router-link>
         |
+        <router-link :to="{ name: 'Cars' }">Cars</router-link>
+        |
         <router-link :to="{ name: 'About' }">About</router-link>
         <router-view />
     </div>

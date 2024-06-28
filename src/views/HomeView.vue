@@ -8,7 +8,7 @@ const store = useCounterStore()
 
 <template>
     <div>
-        <h1>Home</h1>
+        <h1 class="my-3">Home</h1>
 
         <!-- {{ store.doubleCount }} -->
 
@@ -40,14 +40,6 @@ const store = useCounterStore()
                 />
             </div>
         </div>
-        <router-link
-            :to="{ name: 'Cars' }"
-            class="btn btn-outline-dark my-4"
-        >
-            Load Cars
-        </router-link>
-
-        <router-view />
     </div>
 </template>
 
