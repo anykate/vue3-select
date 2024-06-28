@@ -1,7 +1,6 @@
 <script setup>
 import { useCounterStore } from '@/stores/counter'
 import { ref } from 'vue'
-import CarsView from '@/views/CarsView.vue'
 
 const mask = ref('+91')
 const store = useCounterStore()
