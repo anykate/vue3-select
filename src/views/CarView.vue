@@ -31,10 +31,14 @@ onBeforeMount(() => {
                 </div>
 
                 <button
-                    class="btn btn-outline-dark mb-4"
-                    @click="router.push({ name: 'Home' })"
+                    class="btn btn-outline-dark mb-4 btn-lg d-flex align-items-center gap-2"
+                    @click="router.push({ name: 'Cars' })"
                 >
-                    Back to Home
+                    <i
+                        class="bi bi-arrow-left-circle-fill"
+                        style="font-size: 2rem"
+                    ></i>
+                    CarList
                 </button>
 
                 <div class="links">
