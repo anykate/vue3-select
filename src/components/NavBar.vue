@@ -25,8 +25,10 @@
                 id="navbarNav"
                 class="collapse navbar-collapse"
             >
-                <ul class="navbar-nav ms-auto d-flex align-items-center gap-1">
-                    <li class="nav-item">
+                <ul
+                    class="navbar-nav ms-auto d-md-flex align-items-md-center gap-1"
+                >
+                    <li class="nav-item mt-2 mt-md-0">
                         <router-link
                             class="nav-link"
                             :to="{ name: 'Cars' }"
